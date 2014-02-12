@@ -14,6 +14,9 @@
 @end
 
 @implementation MBCoolViewController
+- (IBAction)logTestButtonPressed:(id)sender {
+    NSLog(@"HI EVERYBODY");
+}
 
 - (IBAction)buttonPressed:(id)sender {
     NSString *urlString = @"http://localhost:3000/apiTest";
@@ -21,7 +24,10 @@
     NSLog(@"%@", urlString);
     
     [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:url] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-        NSlog(data);
+        NSString* jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"%@", jsonString);
+        NSError* localError = nil;
+        NSDictionary* parsedObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&localError];
     }];
 }
 
