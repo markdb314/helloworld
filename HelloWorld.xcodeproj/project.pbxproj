@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D18EDA118AC223C0067935F /* MBSampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D18EDA018AC223C0067935F /* MBSampleClass.m */; };
+		4D18EDA318AC44A80067935F /* MBSampleClassTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D18EDA218AC44A80067935F /* MBSampleClassTest.m */; };
 		4D1E2B6418A3348C00A73EC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1E2B6318A3348C00A73EC3 /* Foundation.framework */; };
 		4D1E2B6618A3348C00A73EC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1E2B6518A3348C00A73EC3 /* CoreGraphics.framework */; };
 		4D1E2B6818A3348C00A73EC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1E2B6718A3348C00A73EC3 /* UIKit.framework */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D18ED9F18AC223C0067935F /* MBSampleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSampleClass.h; sourceTree = "<group>"; };
+		4D18EDA018AC223C0067935F /* MBSampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSampleClass.m; sourceTree = "<group>"; };
+		4D18EDA218AC44A80067935F /* MBSampleClassTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSampleClassTest.m; sourceTree = "<group>"; };
 		4D1E2B6018A3348C00A73EC3 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1E2B6318A3348C00A73EC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4D1E2B6518A3348C00A73EC3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -145,6 +150,9 @@
 		4D1E2B8218A3348C00A73EC3 /* HelloWorldTests */ = {
 			isa = PBXGroup;
 			children = (
+				4D18ED9F18AC223C0067935F /* MBSampleClass.h */,
+				4D18EDA018AC223C0067935F /* MBSampleClass.m */,
+				4D18EDA218AC44A80067935F /* MBSampleClassTest.m */,
 				4D1E2B8818A3348C00A73EC3 /* HelloWorldTests.m */,
 				4D1E2B8318A3348C00A73EC3 /* Supporting Files */,
 			);
@@ -270,6 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D1E2B8918A3348C00A73EC3 /* HelloWorldTests.m in Sources */,
+				4D18EDA118AC223C0067935F /* MBSampleClass.m in Sources */,
+				4D18EDA318AC44A80067935F /* MBSampleClassTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +472,7 @@
 				4D1E2B8E18A3348C00A73EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D1E2B8F18A3348C00A73EC3 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +481,7 @@
 				4D1E2B9118A3348C00A73EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
